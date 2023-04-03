@@ -34,6 +34,10 @@ h1 {
     border: gray 2px solid;
 }
 
+.winning {
+    animation: winning-animation 1s infinite;
+}
+
 .cell:hover {
     outline: dashed orangered 4px;
     z-index: 0;
@@ -58,4 +62,19 @@ button {
 button:hover {
     background-color: yellowgreen;
     color: black;
+}
+
+@keyframes winning-animation {
+    0% {
+        border: gray 2px solid;
+        background-color: white;
+    }
+    50% {
+        border: orangered 2px solid;
+        background-color: yellowgreen;
+    }
+    100% {
+        border: gray 2px solid;
+        background-color: white;
+    }
 }
